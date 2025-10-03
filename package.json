@@ -4,9 +4,9 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
-    "build": "tsc",
-    "start": "ts-node src/server.ts",
-    "start:prod": "node dist/server.js"
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "start:dev": "ts-node src/server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
